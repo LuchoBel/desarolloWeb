@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - Tribo</title>
+    <link rel="icon" type="image/png" href="pics/Logo/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <script src="js/form-validation.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+
+        <a class="logo" href="index.html"><img src="pics/Logo/favicon.png" alt="Tribo"><span>Tribo</span></a>
+
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="destinos.html">Destinations</a>
+          <a href="foro.html">Forum</a>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <a href="nosotros.html">About</a>
+          <a href="perfil.html">My profile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-ghost btn btn-small" href="login.html">Log in</a>
+          <a class="btn btn-small" href="registro.html">Sign up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="auth-wrap">
+        <form class="form" onsubmit="return false">
+          <h1>Log in</h1>
+
+          <label for="e">Email</label>
+          <input id="e" type="email" placeholder="your@email.com">
+
+          <label for="p">Password</label>
+          <input id="p" type="password" placeholder="••••••••">
+
+          <p style="margin-top:14px">
+            <button class="btn" style="width:100%" type="submit">Log in</button>
+          </p>
+
+          <p class="center meta">Don't have an account?
+            <a href="registro.html" style="color:var(--primary);font-weight:700">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div>
+          <strong>Tribo</strong>
+          <p>Travel forum: share and learn.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <br>
+          <a href="destinos.html">Destinations</a>
+          <br>
+          <a href="foro.html">Forum</a>
+          <br>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <br>
+          <a href="nosotros.html">About</a>
+        </div>
+
+        <div>
+          <strong>Account</strong>
+          <br>
+          <a href="login.html">Log in</a>
+          <br>
+          <a href="registro.html">Sign up</a>
+          <br>
+          <a href="perfil.html">Profile</a>
+        </div>
+
+      </div>
+
+      <div class="container copy">© 2026 Tribo - DSW Project</div>
+    </footer>
+
+  </body>
+</html>

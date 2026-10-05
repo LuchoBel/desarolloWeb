@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic - Tribo</title>
+    <link rel="icon" type="image/png" href="pics/Logo/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/form-validation.js" defer></script>
+    <script src="js/favorites.js" defer></script>
+    <script src="js/view-counter.js" defer></script>
+    <script src="js/char-counter.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+
+        <a class="logo" href="index.html"><img src="pics/Logo/favicon.png" alt="Tribo"><span>Tribo</span></a>
+
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="destinos.html">Destinations</a>
+          <a class="active" href="foro.html" aria-current="page">Forum</a>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <a href="nosotros.html">About</a>
+          <a href="perfil.html">My profile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-ghost btn btn-small" href="login.html">Log in</a>
+          <a class="btn btn-small" href="registro.html">Sign up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="container section detail-layout">
+
+      <div>
+
+        <article class="post">
+          <div class="post-header">
+            <div class="avatar">J</div>
+            <div>
+              <strong>Jordi</strong>
+              <div class="meta">
+                <span class="badge badge-yellow">Budget</span>
+                Kyoto · 5h ago · 2.8k views
+              </div>
+            </div>
+          </div>
+
+          <h1 style="font-size:1.4rem">Kyoto in 7 days on €900, is it possible?</h1>
+
+          <p>Hi! Flight is €620, I have €280 left for 7 days. Hostels + konbini + 7-day JR Pass? Anyone done it on a budget? Thanks!</p>
+        </article>
+
+        <div class="reply">
+          <div class="reply-header">
+            <div class="avatar">M</div>
+            <strong>Marta</strong>
+            <span class="meta">3h ago</span>
+          </div>
+          <p>Yes, but it's tight. Hostel €35/night = €245. That's a lot. Look at guesthouses in Osaka and one day in Kyoto, you save €10/night. Konbini at €15/day works.</p>
+        </div>
+
+        <div class="reply">
+          <div class="reply-header">
+            <div class="avatar">D</div>
+            <strong>Diego</strong>
+            <span class="meta">1h ago</span>
+          </div>
+          <p>The JR Pass only pays off if you go to Tokyo round-trip. If it's just Kansai, use a regional pass (€60). You save €180 there.</p>
+        </div>
+
+        <div class="post">
+          <h3>Reply</h3>
+          <form class="form" style="box-shadow:none;border:0;padding:0" onsubmit="return false">
+            <label for="r">Your reply</label>
+            <textarea id="r" rows="4" placeholder="Write respectfully, bring useful data..." data-min-chars="10" data-max-chars="500"></textarea>
+            <p style="margin-top:10px">
+              <button class="btn" type="submit">Post reply</button>
+            </p>
+            <p class="meta">Visual only, no backend.</p>
+          </form>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="sidebar-box">
+          <h3>Related</h3>
+          <p><a href="destino-detalle.html">Kyoto guide →</a></p>
+          <p class="meta">41 replies · 5 participants</p>
+        </div>
+
+        <div class="sidebar-box">
+          <h3>Rules</h3>
+          <p class="meta">No spam · Cite real prices · Be respectful</p>
+        </div>
+      </aside>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div>
+          <strong>Tribo</strong>
+          <p>Travel forum: share and learn.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <br>
+          <a href="destinos.html">Destinations</a>
+          <br>
+          <a href="foro.html">Forum</a>
+          <br>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <br>
+          <a href="nosotros.html">About</a>
+        </div>
+
+        <div>
+          <strong>Account</strong>
+          <br>
+          <a href="login.html">Log in</a>
+          <br>
+          <a href="registro.html">Sign up</a>
+          <br>
+          <a href="perfil.html">Profile</a>
+        </div>
+
+      </div>
+
+      <div class="container copy">© 2026 Tribo - DSW Project</div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile - Tribo</title>
+    <link rel="icon" type="image/png" href="pics/Logo/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/auth.js" defer></script>
+    <script src="js/favorites.js" defer></script>
+    <script src="js/profile-tabs.js" defer></script>
+    <script src="js/profile-data.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+
+        <a class="logo" href="index.html"><img src="pics/Logo/favicon.png" alt="Tribo"><span>Tribo</span></a>
+
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="destinos.html">Destinations</a>
+          <a href="foro.html">Forum</a>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <a href="nosotros.html">About</a>
+          <a class="active" href="perfil.html" aria-current="page">My profile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-ghost btn btn-small" href="login.html">Log in</a>
+          <a class="btn btn-small" href="registro.html">Sign up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="container section">
+
+      <!-- Vista para usuario NO autenticado -->
+      <div id="profile-guest" style="text-align:center;padding:60px 20px;max-width:600px;margin:0 auto;">
+        <div style="width:120px;height:120px;border-radius:50%;background:var(--dark);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:3rem;margin:0 auto 24px;">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <h1 style="font-size:1.8rem;margin-bottom:12px;">My Profile</h1>
+        <p class="meta" style="font-size:1.1rem;margin-bottom:24px;">Log in or create an account to view your profile, topics, and saved content.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <button class="btn" id="guest-login-btn">Log in</button>
+          <button class="btn btn-light" id="guest-register-btn">Sign up</button>
+        </div>
+      </div>
+
+      <!-- Vista para usuario autenticado -->
+      <div id="profile-authenticated" style="display:none;">
+
+        <div class="profile-head">
+          <div class="avatar" id="profile-avatar">J</div>
+          <div>
+            <h1 id="profile-name">User Name</h1>
+            <p id="profile-info">0 countries · 0 replies · Member since 2024</p>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <span class="badge badge-coral">My topics (0)</span>
+          <span class="badge">Replies (0)</span>
+          <span class="badge badge-yellow">Saved (0)</span>
+        </div>
+
+        <div id="tab-topics" class="tab-content active">
+          <p class="meta" style="padding:16px;text-align:center;">You haven't created any topics yet. Start a conversation!</p>
+        </div>
+
+        <div id="tab-replies" class="tab-content" style="display:none;">
+          <p class="meta" style="padding:16px;text-align:center;">You haven't posted any replies yet.</p>
+        </div>
+
+        <div id="tab-saved" class="tab-content" style="display:none;">
+          <p class="meta" style="padding:16px;text-align:center;">No saved topics yet. Browse the forum and save topics you like!</p>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px">
+          <div class="sidebar-box">
+            <h3>My trips</h3>
+            <p class="meta">No trips added yet.</p>
+          </div>
+
+          <div class="sidebar-box">
+            <h3>Saved</h3>
+            <p class="meta">Nothing saved yet.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div>
+          <strong>Tribo</strong>
+          <p>Travel forum: share and learn.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <br>
+          <a href="destinos.html">Destinations</a>
+          <br>
+          <a href="foro.html">Forum</a>
+          <br>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <br>
+          <a href="nosotros.html">About</a>
+        </div>
+
+        <div>
+          <strong>Account</strong>
+          <br>
+          <a href="login.html">Log in</a>
+          <br>
+          <a href="registro.html">Sign up</a>
+          <br>
+          <a href="perfil.html">Profile</a>
+        </div>
+
+      </div>
+
+      <div class="container copy">© 2026 Tribo - DSW Project</div>
+    </footer>
+
+  </body>
+</html>

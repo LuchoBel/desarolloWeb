@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribo - Travel forum</title>
+    <link rel="icon" type="image/png" href="pics/Logo/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/auth.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+
+        <a class="logo" href="index.html"><img src="pics/Logo/favicon.png" alt="Tribo"><span>Tribo</span></a>
+
+        <nav class="main-nav" aria-label="Main">
+          <a class="active" href="index.html" aria-current="page">Home</a>
+          <a href="destinos.html">Destinations</a>
+          <a href="foro.html">Forum</a>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <a href="nosotros.html">About</a>
+          <a href="perfil.html">My profile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-ghost btn btn-small" href="login.html">Log in</a>
+          <a class="btn btn-small" href="registro.html">Sign up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <h1>Travel better with <em>real tips</em> from travelers</h1>
+
+          <p class="lead">Ask questions, share routes and budgets, and find travel companions. A light background designed for long reading.</p>
+
+          <form class="search-inline" action="foro.html">
+            <input type="search" placeholder="Search: Kyoto in 7 days, packing for Patagonia..." aria-label="Search">
+            <button class="btn" type="submit">Search</button>
+          </form>
+
+          <div class="meta" style="margin-top:12px">
+            <span class="badge badge-teal">Tips</span>
+            <span class="badge">Routes</span>
+            <span class="badge badge-yellow">Budget</span>
+            <span class="badge badge-coral">Buddies</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Active community</h3>
+          <p>12,400 travelers · 3,800 topics · 28 top destinations</p>
+
+          <div class="stat-row">
+            <div class="stat"><strong>4.9</strong>rating</div>
+            <div class="stat"><strong>860</strong>replies/week</div>
+            <div class="stat"><strong>120</strong>guides</div>
+          </div>
+
+          <p style="margin-top:14px">
+            <a class="btn" href="crear-tema.html">New topic</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <main class="container">
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Featured destinations</h2>
+          <a class="link" href="destinos.html">See all →</a>
+        </div>
+
+        <div class="grid-3">
+
+          <article class="card">
+            <img width="600" height="400" loading="lazy" decoding="async" class="cover" src="https://picsum.photos/seed/kioto/600/400" alt="Kyoto">
+            <div class="card-body">
+              <span class="badge badge-yellow">Featured</span>
+              <h3>Kyoto, Japan</h3>
+              <p class="meta">Temples · Autumn · 7 days</p>
+              <p>Temple guide, transport, and the best time to visit.</p>
+            </div>
+            <div class="card-footer">
+              <span class="meta">214 topics</span>
+              <a class="btn btn-small" href="destino-detalle.html">View guide</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img width="600" height="400" loading="lazy" decoding="async" class="cover" src="https://picsum.photos/seed/patagonia/600/400" alt="Patagonia">
+            <div class="card-body">
+              <span class="badge badge-teal">Adventure</span>
+              <h3>Patagonia, Argentina/Chile</h3>
+              <p class="meta">Trekking · Wind · 10 days</p>
+              <p>Torres del Paine + El Chaltén route with budget.</p>
+            </div>
+            <div class="card-footer">
+              <span class="meta">186 topics</span>
+              <a class="btn btn-small" href="destino-detalle.html">View guide</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img width="600" height="400" loading="lazy" decoding="async" class="cover" src="https://picsum.photos/seed/barcelona/600/400" alt="Barcelona">
+            <div class="card-body">
+              <span class="badge">City</span>
+              <h3>Barcelona, Spain</h3>
+              <p class="meta">City · Beach · 4 days</p>
+              <p>What to see, where to eat, and how to avoid the crowds.</p>
+            </div>
+            <div class="card-footer">
+              <span class="meta">342 topics</span>
+              <a class="btn btn-small" href="destino-detalle.html">View guide</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Latest forum topics</h2>
+          <a class="link" href="foro.html">Go to the forum →</a>
+        </div>
+
+        <div class="topic">
+          <div class="avatar">M</div>
+          <div>
+            <h3><a href="tema.html">10-day Patagonia backpacking, what should I pack?</a></h3>
+            <p class="meta">
+              <span class="badge badge-teal">Tips</span>
+              by Marta · Patagonia · 2h ago
+            </p>
+          </div>
+          <div class="counts">24 replies<br>1.2k views</div>
+        </div>
+
+        <div class="topic">
+          <div class="avatar">J</div>
+          <div>
+            <h3><a href="tema.html">Kyoto in 7 days on €900, is it possible?</a></h3>
+            <p class="meta">
+              <span class="badge badge-yellow">Budget</span>
+              by Jordi · 5h ago
+            </p>
+          </div>
+          <div class="counts">41 replies<br>2.8k views</div>
+        </div>
+
+        <div class="topic">
+          <div class="avatar">A</div>
+          <div>
+            <h3><a href="tema.html">Looking for a travel buddy for the Cancun - Tulum route in November</a></h3>
+            <p class="meta">
+              <span class="badge badge-coral">Buddies</span>
+              by Ana · 1d ago
+            </p>
+          </div>
+          <div class="counts">12 replies<br>640 views</div>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Bourdain's Corner</h2>
+          <a class="link" href="bourdain-corner.html">Eat around the world →</a>
+        </div>
+
+        <div class="grid-3">
+
+          <article class="card">
+            <div class="card-body">
+              <span class="badge badge-coral">Street food</span>
+              <h3>Ramen in Kyoto for under €8</h3>
+              <p class="meta">Photo pending</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-small" href="bourdain-corner.html">Visit section</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <span class="badge badge-yellow">Guide</span>
+              <h3>About us</h3>
+              <p>Who we are and the forum rules.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-small" href="nosotros.html">About</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div>
+          <strong>Tribo</strong>
+          <p>Travel forum: share and learn.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <br>
+          <a href="destinos.html">Destinations</a>
+          <br>
+          <a href="foro.html">Forum</a>
+          <br>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <br>
+          <a href="nosotros.html">About</a>
+        </div>
+
+        <div>
+          <strong>Account</strong>
+          <br>
+          <a href="login.html">Log in</a>
+          <br>
+          <a href="registro.html">Sign up</a>
+          <br>
+          <a href="perfil.html">Profile</a>
+        </div>
+
+      </div>
+
+      <div class="container copy">© 2026 Tribo - DSW Project</div>
+    </footer>
+
+  </body>
+</html>

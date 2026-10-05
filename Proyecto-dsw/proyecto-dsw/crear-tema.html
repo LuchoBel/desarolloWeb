@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New topic - Tribo</title>
+    <link rel="icon" type="image/png" href="pics/Logo/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/form-validation.js" defer></script>
+    <script src="js/image-preview.js" defer></script>
+    <script src="js/char-counter.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+
+        <a class="logo" href="index.html"><img src="pics/Logo/favicon.png" alt="Tribo"><span>Tribo</span></a>
+
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="destinos.html">Destinations</a>
+          <a class="active" href="foro.html" aria-current="page">Forum</a>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <a href="nosotros.html">About</a>
+          <a href="perfil.html">My profile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-ghost btn btn-small" href="login.html">Log in</a>
+          <a class="btn btn-small" href="registro.html">Sign up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1>Start a new topic</h1>
+      <p class="meta">Clear title + destination + category = more replies.</p>
+
+      <form class="form" style="margin-top:16px" onsubmit="return false">
+
+        <label for="t">Title</label>
+        <input id="t" placeholder="E.g.: 4 days in Lisbon on €300">
+
+        <div class="form-row">
+          <div>
+            <label for="d">Destination</label>
+            <select id="d">
+              <option>Kyoto</option>
+              <option>Patagonia</option>
+              <option>Barcelona</option>
+              <option>Cancun</option>
+              <option>Lisbon</option>
+              <option>Iceland</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="c">Category</label>
+            <select id="c">
+              <option>Tips</option>
+              <option>Routes</option>
+              <option>Budget</option>
+              <option>Buddies</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="m">Message</label>
+        <textarea id="m" rows="6" placeholder="Dates, budget, what you're looking for..." data-min-chars="30" data-max-chars="500"></textarea>
+
+        <label for="f">Photo (optional)</label>
+        <input id="f" type="file">
+
+        <p style="margin-top:14px;display:flex;gap:10px">
+          <button class="btn" type="submit">Publish</button>
+          <a class="btn btn-light" href="foro.html">Back to forum</a>
+        </p>
+
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div>
+          <strong>Tribo</strong>
+          <p>Travel forum: share and learn.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <br>
+          <a href="destinos.html">Destinations</a>
+          <br>
+          <a href="foro.html">Forum</a>
+          <br>
+          <a href="bourdain-corner.html">Bourdain's Corner</a>
+          <br>
+          <a href="nosotros.html">About</a>
+        </div>
+
+        <div>
+          <strong>Account</strong>
+          <br>
+          <a href="login.html">Log in</a>
+          <br>
+          <a href="registro.html">Sign up</a>
+          <br>
+          <a href="perfil.html">Profile</a>
+        </div>
+
+      </div>
+
+      <div class="container copy">© 2026 Tribo - DSW Project</div>
+    </footer>
+
+  </body>
+</html>
